@@ -28,9 +28,15 @@ module.exports.connections = {
   * Installed by default.                                                    *
   *                                                                          *
   ***************************************************************************/
+<<<<<<< Updated upstream
   //localDiskDb: {
    // adapter: 'sails-disk'
   //},
+=======
+/*  localDiskDb: {
+    adapter: 'sails-disk'
+  },*/
+>>>>>>> Stashed changes
 
   /***************************************************************************
   *                                                                          *
@@ -56,6 +62,7 @@ module.exports.connections = {
   * Run: npm install sails-mongo                                             *
   *                                                                          *
   ***************************************************************************/
+<<<<<<< Updated upstream
    someMongodbServer: {
      adapter: 'sails-mongo',
      host: 'localhost',
@@ -64,6 +71,22 @@ module.exports.connections = {
      //password: 'password', //optional
      database: 'webshopdb' //optional
    },
+=======
+  // someMongodbServer: {
+  //   adapter: 'sails-mongo',
+  //   host: 'localhost',
+  //   port: 27017,
+  //   user: 'username', //optional
+  //   password: 'password', //optional
+  //   database: 'your_mongo_db_name_here' //optional
+  // },
+  someMongodbServer: {
+    adapter: 'sails-mongo',
+    host: 'localhost',
+     port: 27017,
+     database: 'webshopdb' //optional
+   }
+>>>>>>> Stashed changes
 
   /***************************************************************************
   *                                                                          *

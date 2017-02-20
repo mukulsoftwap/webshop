@@ -18,7 +18,11 @@ module.exports.models = {
   *                                                                          *
   ***************************************************************************/
   // connection: 'localDiskDb',
+<<<<<<< Updated upstream
  connection: 'someMongodbServer',
+=======
+   connection: 'someMongodbServer',   
+>>>>>>> Stashed changes
   /***************************************************************************
   *                                                                          *
   * How and whether Sails will attempt to automatically rebuild the          *
