@@ -10,11 +10,11 @@ module.exports = {
   attributes: {
     name : "string",
     discription : "string",
-    price : "integer",
-    category : "string",
-    quantity : "integer",
+    price : "string",
+    category : "json",
+    quantity : "string",
     thum : "string",
-    discount : "integer"
+    discount : "string"
   }
   
 };
