@@ -19,6 +19,16 @@
 
 module.exports.policies = {
 
+  '*': ['passport', 'sessionAuth','bearerAuth'],
+
+ 'auth': {
+    '*': ['passport']
+  },
+
+  // 'category':{
+  //   '*':true
+  // }
+
   /***************************************************************************
   *                                                                          *
   * Default policy for all controllers and actions (`true` allows public     *
