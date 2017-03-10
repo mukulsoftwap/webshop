@@ -8,5 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   constructor(){
   }
-  
+
+  ngOnInit(){
+    if(localStorage.getItem('token')){
+      if(location.pathname!="/category"){
+        location.href="category";
+      };
+    }else{
+      if(location.pathname!="/login"){
+        location.href="login";
+      };
+    }
+  }
 }
