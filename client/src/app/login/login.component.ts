@@ -18,7 +18,7 @@ export class LoginComponent implements OnInit {
 
   login(){
     this.service.checkLogin(this.data).subscribe((res)=>{
-        localStorage.setItem('token',res.token);
+        localStorage.setItem('token',res.data.token);
         location.href="category ";
     });
   }

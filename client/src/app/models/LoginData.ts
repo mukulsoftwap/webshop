@@ -1,4 +1,4 @@
 export class LoginData{
-    identifier : String;
+    email : String;
     password : String;
 }

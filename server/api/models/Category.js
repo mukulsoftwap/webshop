@@ -1,16 +1,26 @@
+"use strict";
+
 /**
- * Category.js
- *
- * @description :: TODO: You might write a short summary of how this model works and what it represents here.
- * @docs        :: http://sailsjs.org/documentation/concepts/models-and-orm/models
+ * Category
+ * @description :: Model for storing Category records
  */
 
 module.exports = {
+  schema: true,
 
   attributes: {
-    name : {type : "string", unique : true},
-    status : "boolean",
-    subCat : {collection : "Subcat", via : "parent"}
-  }
-};
+    name : {
+      type : "string", 
+      unique : true
+    },
 
+    status : "boolean",
+
+    toJSON() {
+      return this.toObject();
+    }
+  },
+
+  beforeUpdate: (values, next) => next(),
+  beforeCreate: (values, next) => next()
+};
